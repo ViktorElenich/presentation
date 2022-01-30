@@ -1,8 +1,8 @@
 {
   "name": "reveal.js",
+  "homepage": "https://github.com/ViktorElenich/presentation",
   "version": "4.2.1",
   "description": "The HTML Presentation Framework",
-  "homepage": "https://revealjs.com",
   "subdomain": "revealjs",
   "main": "dist/reveal.js",
   "module": "dist/reveal.esm.js",
