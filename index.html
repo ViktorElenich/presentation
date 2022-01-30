@@ -16,8 +16,79 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<a href="https://www.w3schools.com/html/html5_canvas.asp">
+						<img src="https://www.yunbitsoftware.com/blog/wp-content/uploads/2018/02/imagen-principal.png" alt="reveal.js logo" style="height: 480px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					</a>
+					<h3>The HTML5 CANVAS Presentation</h3>
+					<p>
+						<small>Created by <a href="https://github.com/ViktorElenich">Viktor Elenich</a></small>
+					</p>
+				</section>
+				<section>
+					<h2>What is HTML5 Canvas?</h2>
+					<p>
+						Canvas is an HTML5 element that allows you to easily and powerfully draw graphics, on the fly, using the ubiquitous JavaScript programming language.
+					</p>
+				</section>
+				<section>
+					<section>
+						<p>The element only works as a container for graphics - therefore, you should use JavaScript to render the graphics.</p>
+					</section>
+					<section>
+						<p>You can use the Canvas element to achieve various objectives on your web applications, including drawing graphs, creating HTML Canvas animations, developing games, or creating photos—all without depending on another external tool.</p>
+					</section>
+					<section>
+						<p>Amazingly, Canvas is available as an API, and it is supported by most modern browsers and platforms. Furthermore, it’s cross-platform compatible. As such you can create an application once, and deploy it anywhere—on PCs or mobile devices.</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<section data-auto-animate>
+							<h2 data-id="code-title">Code Example</h2>
+							<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+								<canvas width="320" height="160" id="canvasExample"></canvas>
+							</code></pre>
+							<p>As you can see on the above code, the Canvas element allows two specific attributes: width and height. If you do not provide values for these two attributes, the Canvas will resort to its default values of 300 pixels for width and 150 pixels for height.</p>
+							<p>The id attribute is used for identifying the Canvas element in the JavaScript code. Furthermore, you can include other CSS styling properties to make the canvas drawing region more interactive and visible, such as padding, background color, or border—just like with any other HTML element.</p>
+						</section>
+					</section>
+					<section>
+						<section data-auto-animate>
+							<h2 data-id="code-title">Circle drawing</h2>
+							<p>There is no specific method for creating a circle like the rect() method of a rectangle. However, we can create a fully enclosed arc such as a circle using the arc() method.</p>
+							<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+								window.onload = function() {
+									var canvas = document.getElementById("myCanvas");
+									var context = canvas.getContext("2d");
+									context.arc(150, 100, 70, 0, 2 * Math.PI, false);
+									context.stroke();
+								};
+							</code></pre>
+						</section>
+					</section>
+				</section>
+				<section data-background-iframe="https://codepen.io/towc/pen/VYbYvQ" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2>More complex animation</h2>
+						<p>Rainbow rain.</p>
+					</div>
+				</section>
+				<section>
+					<section>
+						<h2>How to draw on a Canvas?</h2>
+						<p>To create graphics on a Canvas, you need to begin by targeting it using the Document Object Model (DOM).</p>
+					</section>
+					<section>
+						<p>And, an id attribute will assist you to identify the matching target location (in this HTML Canvas example, the id is “canvasExample”).</p>
+					</section>
+					<section>
+						<p>Initially, the element is blank. Thus, to exhibit something, a JavaScript script should obtain the rendering context before drawing on it.</p>
+					</section>
+					<section>
+						<p>The Canvas element has an in-built DOM method referred to as getContext. It is a JavaScript function utilized in accessing the rendering context together with its drawing methods. This function accepts a single parameter, which is usually the 2D graphics context (defined as “2d”).</p>
+					</section>
+				</section>
 			</div>
 		</div>
 
